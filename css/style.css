@@ -1,0 +1,39 @@
+body {
+  background: #87D67E;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.wrap {
+  /*width: 400px;*/
+  width: 80%;
+  margin: auto;
+  height: 600px;
+  background: black;
+  padding: 15px;
+  border-radius: 25px;
+}
+input[type=text] {
+  width: 97%;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 75px;
+}
+input[type=button] {
+  width: 24%;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 75px;
+}
+input[type=button].bottom{
+  width: 19.1%;
+}

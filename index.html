@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/calc.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <form class="calc">
+        <input type="text" id="display" name="display" value="" onkeydown="return false">
+        <br><br>
+        <input type="button" id="7" name="7" value="7" onclick=key_input(this.id);>
+        <input type="button" id="8" name="8" value="8" onclick=key_input(this.id);>
+        <input type="button" id="9" name="9" value="9" onclick=key_input(this.id);>
+        <input type="button" id="+" name="+" value="+" onclick=key_input(this.id);>
+        <br><br>
+        <input type="button" id="4" name="4" value="4" onclick=key_input(this.id);>
+        <input type="button" id="5" name="5" value="5" onclick=key_input(this.id);>
+        <input type="button" id="6" name="6" value="6" onclick=key_input(this.id);>
+        <input type="button" id="-" name="-" value="-" onclick=key_input(this.id);>
+        <br><br>
+        <input type="button" id="1" name="1" value="1" onclick=key_input(this.id);>
+        <input type="button" id="2" name="2" value="2" onclick=key_input(this.id);>
+        <input type="button" id="3" name="3" value="3" onclick=key_input(this.id);>
+        <input type="button" id="*" name="*" value="&times;" onclick=key_input(this.id);>
+        <br><br>
+        <input type="button" id="0" name="0" value="0" onclick=key_input(this.id);>
+        <input type="button" id="%" name="." value="." onclick=key_input(this.id);>
+        <input type="button" id="del" name="del" value="&#8592; del" onclick=backspace();>
+        <input type="button" id="/" name="/" value="&divide;" onclick=key_input(this.id);>
+        <br><br>
+        <div class="bottom_buttons">
+        <input type="button" class="bottom" id="clear" name="clear" value="CLEAR" onclick="clear_display();">
+        <input type="button" class="bottom" id="neg" name="neg" value="+/-" onclick="negate();">
+        <input type="button" class="bottom" id="open_par" name="open_par" value="(" onclick="parentheses(this.id);">
+        <input type="button" class="bottom" id="close_par" name="close_par" value=")" onclick="parentheses(this.id);">
+        <input type="button" class="bottom" id="equal" name="equal" value="=" onclick=compute();>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
